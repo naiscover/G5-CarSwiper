@@ -1,6 +1,6 @@
-# <Data Content>
+# Data Content
 ## Context
-<This section describes the types of data used and managed by the CarSwiper app, a platform designed for seamless car rental experiences. It covers essential data models, user interactions, and integration points important to our project.>
+This section describes the types of data used and managed by the CarSwiper app, a platform designed for seamless car rental experiences. It covers essential data models, user interactions, and integration points important to our project.
 ## Content
 Entity       |  Attributes                                 
 -------------+---------------------------------------------
