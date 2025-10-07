@@ -1,10 +1,9 @@
 ## Context
 This .md will provide user stories regarding our playerbase.
-## Content
-- <Bullets or tables as required by your section>
-- <Add links/screenshots if helpful>
+## User Stories
+- As a caretaker, I want to easily filter for wheelchair friendly vehicles so that my patient can easily access the car
+- ​​As a non-native speaker, I want to easily navigate the app so that I can book without troubles.
 ## Decisions (if any)
-- <Decision> — owner, date
+- N/A
 ## Next Steps
-- [ ] <Action 1> (owner, due date)
-- [ ] <Action 2> (owner, due date) 
+- [ ] Add descriptions to wiki (Ivan, Oct 14th 2025)
