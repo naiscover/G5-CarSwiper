@@ -7,5 +7,5 @@
 ## Decisions (if any)
 - <Decision> — owner, date
 ## Next Steps
-- [ ] <Making sure files save before submission> (owner, due date)
-- [ ] <Making sure beforehand if everyone is avalable and finding workarounds if that is not the case> (owner, due date) 
+- [ ] < Making sure files save before submission > (owner, due date)
+- [ ] < Making sure beforehand if everyone is avalable and finding workarounds if that is not the case > (owner, due date) 
