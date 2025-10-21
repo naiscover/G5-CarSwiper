@@ -21,3 +21,8 @@
 - Meeting's will begin and end on scheduled time
 - They will be held anytime we feel we need to work on the project
 - If a member cannot attend a meeting, reason must be stated
+
+## 3 Point Summary
+- Make more Minimalisitic
+- Smoother transition between screens
+- More Images, making it language-barrier free
