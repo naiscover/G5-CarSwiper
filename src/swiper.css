@@ -1,0 +1,270 @@
+body {
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.app {
+  background-color: #f3f4f6;
+  width: 400px;
+  height: 700px;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  z-index: 20; /* Keep above everything */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 24px; /* Icon size */
+  cursor: pointer;
+  color: #333;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.icon-btn:hover {
+  background-color: #f3f4f6;
+}
+
+.page-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+}
+
+.page-title span {
+  color: #2563eb;
+}
+
+/* The Filter Menu (Hidden by default) */
+.filter-drawer {
+  position: absolute; 
+  top: 80px; 
+  left: 0;
+  width: 100%; 
+  background-color: white;
+  
+  /* Animation Props */
+  max-height: 0;
+  overflow: hidden; 
+  transition: max-height 0.4s ease-in-out;
+  
+  z-index: 50; 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.filter-label {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-align: center; /* <--- ADDS CENTERING TO TEXT */
+}
+
+.filter-drawer.open {
+  max-height: 500px; 
+  overflow-y: auto; 
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.filter-drawer::-webkit-scrollbar {
+  width: 6px;
+}
+.filter-drawer::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.chip-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.chip {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  background-color: white;
+  font-size: 13px;
+  font-weight: 600;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.chip.active {
+  background-color: #2563eb;
+  color: white;
+  border-color: #2563eb;
+  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.3);
+}
+
+.close-filters-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #111;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+.card-container {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  width: 100%;
+  height: 65%;
+  object-fit: cover;
+}
+
+.card-details {
+  padding: 20px;
+  text-align: left;
+  background-color: white;
+  flex: 1;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: #111;
+}
+
+.card-price {
+  color: #2563eb;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.card-desc {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.circle-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.circle-btn:hover {
+  transform: scale(1.1);
+}
+
+.dislike {
+  background-color: white;
+  color: #ef4444;
+  border: 2px solid #ef4444;
+}
+
+.like {
+  background-color: #2563eb;
+  color: white;
+  border: 2px solid #2563eb;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* The Data Text (Sedan, Electric, etc.) */
+.tag {
+  color: #111;     
+  font-size: 14px;
+  font-weight: 500;
+  background: none;  
+  padding: 0;         
+  border: none;
+}
+
+.divider {
+  color: #ccc;        
+  font-size: 14px;
+}
+
+@keyframes flyRight {
+  to {
+    transform: translateX(400px) rotate(20deg);
+    opacity: 0;
+  }
+}
+
+@keyframes flyLeft {
+  to {
+    transform: translateX(-400px) rotate(-20deg);
+    opacity: 0;
+  }
+}
+
+/* 2. Create the classes to trigger them */
+.card.swipe-right {
+  animation: flyRight 0.3s ease-out forwards;
+}
+
+.card.swipe-left {
+  animation: flyLeft 0.3s ease-out forwards;
+}
