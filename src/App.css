@@ -9,6 +9,23 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.stats-box ul,
+.membership-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.stats-box li,
+.membership-box li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.membership-box p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
 .app {
   background-color: white;
   width: 400px;
@@ -165,12 +182,25 @@ body {
   color: #2563eb;
 }
 
+.name-text {
+  font-size: 1.6rem;
+  color: #2563eb;
+  text-align: center;
+}
+
 .profile-pic {
   width: 30x;
   height: 30px;
   border-radius: 50%;
 }
 
+.profile-pic-review {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
 /* Main content boxes */
 .main-content {
   display: grid;
