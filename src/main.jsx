@@ -7,6 +7,7 @@ import Login from "./login";
 import Signup from "./signup";
 import Profile from "./profile";
 import Confirmation from "./confirmation";
+import Review from "./review";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -18,7 +19,8 @@ root.render(
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/confirm" element={<Confirmation />} />
-      <Route path="/profile" element={<Profile username="User" />} /> 
+      <Route path="/profile" element={<Profile username="User" />} />
+      <Route path="/review" element={<Review />} /> 
     </Routes>
   </BrowserRouter>
 );
