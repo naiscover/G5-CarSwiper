@@ -28,7 +28,13 @@ export default function Welcome() {
           ⬅
         </button>
         <div className="page-title">Car<span>Swiper</span></div>
-        <img src={profilePic} alt="Profile" className="profile-pic" />
+        <img
+        src={profilePic}
+        alt="Profile"
+        className="profile-pic"
+        style={{ cursor: "pointer" }}
+        onClick={() => navigate("/review", { state: { username } })}
+        />
       </div>
         <hr className="divider" />
         <div className="top-bar">
@@ -63,8 +69,6 @@ export default function Welcome() {
                 <li><strong>Battery Level:</strong> 78%</li>
                 <li><strong>Rental Cost:</strong> $12 / hour</li>
                 <li><strong>Fuel Type:</strong> Electric</li>
-                <li><strong>VIN:</strong> 1FT6W1EV0PW123456</li>
-                <li><strong>Next Maintenance:</strong> Feb 18, 2025</li>
             </ul>
             </div>
 
@@ -80,9 +84,9 @@ export default function Welcome() {
           <div className="box cars-borrowed">
             <h2>Borrowed History</h2>
             <ul>
-              <li>Ford Lightning</li>
-              <li>Jeep Wrangler</li>
-              <li>Tesla Cybertruck</li>
+              <li>Ford Lightning: Oct 24th</li>
+              <li>Jeep Wrangler: July 7th</li>
+              <li>Tesla Cybertruck: Jan 17th</li>
             </ul>
           </div>
         </div>
