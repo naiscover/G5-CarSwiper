@@ -13,6 +13,8 @@ CarSwiper provides a fresh, innovative way to find your desired car to rent.
 
  [Outcomes](../../wiki/Outcomes)
 
+ [Team Reflection](../../wiki/TeamReflection)
+
 # **In-Repo Drafts(reviewed via PRs)**
  [Design: User Stories & Acceptance](docs/design/user-stories.md)
  
