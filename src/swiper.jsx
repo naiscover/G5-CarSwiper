@@ -87,7 +87,7 @@ export default function Swiper() {
         <button onClick={() => navigate("/profile")} className="icon-btn">
           ⬅
         </button>
-        <div className="page-title">Car<span>Finder</span></div>
+        <div className="page-title">Car<span>Swiper</span></div>
         <button 
           onClick={() => setShowFilters(!showFilters)} 
           className="icon-btn"
