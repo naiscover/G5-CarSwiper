@@ -31,7 +31,7 @@ export default function Login() {
     <div className="app">
       <div className="top-section">
         <h1 className="title">
-          Car<span>Finder</span>
+          Car<span>Swiper</span>
         </h1>
         <img src={carImg} alt="Car" className="car-img" />
       </div>
