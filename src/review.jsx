@@ -116,7 +116,23 @@ export default function Welcome() {
               <li>Bob Smith</li>
             </ul>
           </div>
-
+                    <div className="box cars-borrowed">
+            <h2>Settings</h2>
+             <button
+            className="btn"
+            style={{ marginBottom: "20px" }} // spacing below button
+            onClick={() => navigate("/swiper")}
+            >
+            Personal Info
+            </button>       
+            <button
+            className="btn"
+            style={{ marginBottom: "20px" }} // spacing below button
+            onClick={() => navigate("/swiper")}
+            >
+            Payment Methods
+            </button>
+          </div>
         </div>
       </div>
     </div>
